@@ -2,52 +2,62 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Servicios - Aurea Luxury Suites</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <nav class="nav container">
-        <a class="logo" href="index.html">
-            Aurea<br><span>Luxury Suites</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="reseñas.html">Reseñas</a></li>
-            <li><a href="contacto.html" class="btn">Contacto</a></li>
-        </ul>
-    </nav>
+    <header class="hero">
+        <img class="hero-bg" src="assets/images/spa.jpg" alt="Servicios Aurea">
 
-    <section class="section services">
-        <h2>Servicios</h2>
-        <div class="grid">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                Aurea<br><span>Luxury Suites</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a class="active" href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contacto.html" class="btn">Contacto</a></li>
+            </ul>
+        </nav>
 
+        <div class="hero-content container">
+            <h1>Nuestros Servicios</h1>
+            <p>Experiencias diseñadas para tu máximo confort.</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Servicios Exclusivos</h2>
+
+        <div class="service-cards">
             <div class="card">
-                <img src="assets/images/room1.jpg" alt="Habitaciones de lujo">
-                <h3>Habitaciones de lujo</h3>
-                <p>Confort excepcional con diseño elegante.</p>
+                <img src="assets/images/gastronomia.jpg" alt="Gastronomía">
+                <h3>Gastronomía Premium</h3>
+                <p>Platos de autor elaborados por chefs reconocidos internacionalmente.</p>
             </div>
 
             <div class="card">
-                <img src="assets/images/spa.jpg" alt="Spa y Wellness">
-                <h3>Spa & Wellness</h3>
-                <p>Relajación total para cuerpo y mente.</p>
+                <img src="assets/images/spa.jpg" alt="Spa">
+                <h3>Spa & Relax</h3>
+                <p>Tratamientos diseñados para revitalizar cuerpo y mente.</p>
             </div>
 
             <div class="card">
-                <img src="assets/images/gastronomia.jpg" alt="Gastronomía Gourmet">
-                <h3>Gastronomía Gourmet</h3>
-                <p>Experiencias culinarias inolvidables.</p>
+                <img src="assets/images/recepcion.jpg" alt="Recepción">
+                <h3>Atención 24/7</h3>
+                <p>Un equipo preparado para asistirte en todo momento.</p>
             </div>
-
         </div>
     </section>
 

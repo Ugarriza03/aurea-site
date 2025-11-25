@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reservas - Aurea Luxury Suites</title>
 
@@ -12,47 +12,72 @@
 
 <body>
 
-    <nav class="nav container">
-        <a class="logo" href="index.html">
-            Aurea<br><span>Luxury Suites</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="reseñas.html">Reseñas</a></li>
-            <li><a href="contacto.html" class="btn">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- HERO PEQUEÑO -->
+    <header class="small-hero hero">
+        <img class="hero-bg" src="assets/images/hero.jpg" alt="Imagen Aurea">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                Aurea<br><span>Luxury Suites</span>
+            </a>
 
-    <section class="section booking">
-        <h2>Reservas</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a class="active" href="reservas.html">Reservas</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contacto.html" class="btn">Contacto</a></li>
+            </ul>
+        </nav>
 
-        <form>
-            <div class="form-group">
-                <label>Entrada</label>
-                <input type="date" required>
-            </div>
+        <div class="hero-content">
+            <h1>Reservas</h1>
+            <p>Seleccione la habitación que más se ajuste a su estilo.</p>
+        </div>
+    </header>
 
-            <div class="form-group">
-                <label>Salida</label>
-                <input type="date" required>
-            </div>
 
-            <div class="form-group">
-                <label>Huéspedes</label>
-                <input type="number" min="1" value="1" required>
-            </div>
+    <!-- LISTA DE HABITACIONES -->
+    <section class="rooms-grid">
 
-            <button class="btn">Reservar</button>
-        </form>
+        <!-- HABITACIÓN 1 -->
+        <div class="room-card">
+            <h2>Suite Deluxe</h2>
+            <img src="assets/images/room3.jpg" alt="Suite Deluxe">
+            <p>Elegancia y confort con vistas panorámicas. Cama king, baño privado y balcón privado.</p>
+            <a href="contacto.html">Reservar ahora</a>
+        </div>
+
+        <!-- HABITACIÓN 2 -->
+        <div class="room-card">
+            <h2>Suite Premium</h2>
+            <img src="assets/images/room4.jpg" alt="Suite Premium">
+            <p>Amplio espacio con diseño sofisticado y amenities exclusivas para una estadía inolvidable.</p>
+            <a href="contacto.html">Reservar ahora</a>
+        </div>
+
+        <!-- HABITACIÓN 3 -->
+        <div class="room-card">
+            <h2>Suite Familiar</h2>
+            <img src="assets/images/room5.jpg" alt="Suite Familiar">
+            <p>Perfecta para familias, con sala privada y dos ambientes separados para mayor comodidad.</p>
+            <a href="contacto.html">Reservar ahora</a>
+        </div>
+
+        <!-- HABITACIÓN 4 -->
+        <div class="room-card">
+            <h2>Suite Económica</h2>
+            <img src="assets/images/room6.png" alt="Suite Económica">
+            <p>Confort y estilo al mejor precio, manteniendo la calidad característica de Aurea.</p>
+            <a href="contacto.html">Reservar ahora</a>
+        </div>
+
     </section>
+
 
     <footer>
         <p>© 2024 Aurea Luxury Suites - Todos los derechos reservados</p>
     </footer>
 
 </body>
-
 </html>

@@ -6,57 +6,93 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sobre Nosotros - Aurea Luxury Suites</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <nav class="nav container">
-        <a class="logo" href="index.html">
-            Aurea<br><span>Luxury Suites</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="reseñas.html">Reseñas</a></li>
-            <li><a href="contacto.html" class="btn">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- ====================== HERO ====================== -->
+    <header class="hero small-hero">
+        <img class="hero-bg" src="assets/images/servicio.jpg" alt="Hotel Aurea">
 
-    <section class="about section">
-        <div class="container about-content">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                Aurea<br><span>Luxury Suites</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="about.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contacto.html" class="btn">Contacto</a></li>
+            </ul>
+        </nav>
 
-            <h2>Un Refugio de Elegancia y Confort</h2>
+        <div class="hero-content container">
+            <h1>Sobre Nosotros</h1>
+            <p>Elegancia, confort y excelencia en cada detalle.</p>
+        </div>
+    </header>
 
-            <p class="about-text">
-                En Aurea Luxury Suites combinamos diseño moderno, exclusividad y un servicio personalizado 
-                para ofrecer una experiencia única. Nuestras suites están cuidadosamente diseñadas para brindar 
-                tranquilidad, confort y vistas privilegiadas.
-            </p>
-
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>✨ Experiencia Premium</h3>
-                    <p>Suites amplias con decoración de lujo, tecnología integrada y comodidad absoluta.</p>
-                </div>
-
-                <div class="about-item">
-                    <h3>🍽 Gastronomía Exclusiva</h3>
-                    <p>Restaurante gourmet, desayuno buffet y servicio a la habitación 24/7.</p>
-                </div>
-
-                <div class="about-item">
-                    <h3>🌿 Bienestar & Relax</h3>
-                    <p>Spa, sauna, masajes, piscina climatizada y áreas verdes.</p>
-                </div>
+    <!-- ====================== HISTORIA ====================== -->
+    <section class="about-section container">
+        <div class="about-grid">
+            <div>
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Aurea Luxury Suites nació con la misión de ofrecer experiencias de lujo diseñadas para el descanso,
+                    el bienestar y la exclusividad. Cada espacio fue creado para reflejar elegancia moderna,
+                    privacidad y una atención centrada en el confort absoluto.
+                </p>
+                <p>
+                    Desde nuestros inicios hemos buscado elevar el estándar de hospitalidad, fusionando diseño,
+                    tecnología y un servicio altamente personalizado.
+                </p>
             </div>
 
+            <div>
+                <img src="assets/images/servicio.jpg" alt="Historia Aurea" class="about-img">
+            </div>
         </div>
     </section>
 
+    <!-- ====================== VISIÓN Y VALORES ====================== -->
+    <section class="about-values">
+        <div class="container">
+            <h2>Visión y Valores</h2>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Excelencia</h3>
+                    <p>
+                        Buscamos superar las expectativas de cada huésped mediante un servicio impecable
+                        y atención al detalle.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Innovación</h3>
+                    <p>
+                        Creamos espacios modernos y funcionales, integrando tecnología que facilita la comodidad diaria.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Hospitalidad</h3>
+                    <p>
+                        Cada persona es única, por eso adaptamos nuestros servicios para ofrecer experiencias
+                        exclusivas y memorables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== PIE ====================== -->
     <footer>
         <p>© 2024 Aurea Luxury Suites - Todos los derechos reservados</p>
     </footer>
