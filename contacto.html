@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Contacto - Aurea Luxury Suites</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <header class="hero">
+    <!-- HERO PEQUEÑO -->
+    <header class="small-hero">
         <img class="hero-bg" src="assets/images/contacto.jpg" alt="Contacto Aurea">
 
         <nav class="nav container">
@@ -27,7 +26,7 @@
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="reservas.html">Reservas</a></li>
                 <li><a href="reseñas.html">Reseñas</a></li>
-                <li><a class="active" href="contacto.html" class="btn">Contacto</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -37,23 +36,43 @@
         </div>
     </header>
 
-    <section class="contacto container">
-        <h2>Envíanos un mensaje</h2>
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="contact-section container">
+        <div class="contact-grid">
 
-        <form class="contact-form">
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="text" placeholder="Asunto" required>
-            <textarea placeholder="Escribe tu mensaje" required></textarea>
+            <!-- Formulario -->
+            <div class="contact-form-box">
+                <h2>Envíanos un mensaje</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" placeholder="Asunto" required>
+                    <textarea placeholder="Escribe tu mensaje" required></textarea>
 
-            <button class="btn" type="submit">Enviar Mensaje</button>
-        </form>
+                    <button class="btn contact-btn" type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
 
-        <div class="contact-info">
-            <h3>Información de Contacto</h3>
-            <p><strong>📍 Dirección:</strong> Av. del Lujo 123, Ciudad Dorada</p>
-            <p><strong>📞 Teléfono:</strong> +54 11 5555-5555</p>
-            <p><strong>✉️ Email:</strong> contacto@aurealuxurysuites.com</p>
+            <!-- Información -->
+            <div class="contact-info-box">
+                <h2>Información de Contacto</h2>
+
+                <div class="info-item">
+                    <h3>📍 Dirección</h3>
+                    <p>Av. del Lujo 123, Ciudad Dorada</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📞 Teléfono</h3>
+                    <p>+54 11 5555-5555</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>✉️ Email</h3>
+                    <p>contacto@aurealuxurysuites.com</p>
+                </div>
+            </div>
+
         </div>
     </section>
 

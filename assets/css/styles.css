@@ -396,3 +396,229 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =======================================
+   SERVICIOS - OPCIÓN B (Alternado Luxury)
+======================================= */
+
+.services-section {
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Reversa (imagen derecha / texto izquierda) */
+.service-row.reverse {
+    direction: rtl;
+}
+
+.service-row.reverse .service-text {
+    direction: ltr;
+}
+
+/* Imágenes con borde dorado */
+.service-row img {
+    width: 100%;
+    border-radius: 14px;
+    border: 4px solid #d1b97c;
+    padding: 10px;
+    background: #f5f5f5;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    object-fit: cover;
+    max-height: 450px;
+}
+
+/* Textos */
+.service-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.service-text p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .service-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .service-row.reverse {
+        direction: ltr;
+    }
+}
+
+/* =======================================
+   CONTACTO – DISEÑO PREMIUM (Opción A)
+======================================= */
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-form-box,
+.contact-info-box {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    border: 3px solid #d1b97c;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+.contact-form-box h2,
+.contact-info-box h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d1b97c;
+    outline: none;
+    box-shadow: 0 0 8px rgba(209, 185, 124, 0.4);
+}
+
+.contact-form textarea {
+    height: 160px;
+    resize: none;
+}
+
+/* Botón */
+.contact-btn {
+    padding: 14px;
+    width: 100%;
+    background: #a37b36;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.contact-btn:hover {
+    background: #8d6a2f;
+}
+
+/* Tarjetas de info */
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.info-item p {
+    font-size: 17px;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =======================================
+   RESEÑAS – CARRUSEL HORIZONTAL LUXURY
+======================================= */
+
+.reviews-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.reviews-title {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Carrusel */
+.reviews-carousel {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.reviews-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-carousel::-webkit-scrollbar-thumb {
+    background: #d1b97c;
+    border-radius: 10px;
+}
+
+/* Tarjetas */
+.review-card {
+    min-width: 320px;
+    background: white;
+    border-radius: 14px;
+    border: 3px solid #d1b97c;
+    padding: 28px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    scroll-snap-align: center;
+    transition: .3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.18);
+}
+
+/* Texto */
+.review-name {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.review-text {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
