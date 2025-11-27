@@ -21,7 +21,7 @@ body {
 }
 
 /* -------------------------------------------------------
-   HEADER / HERO
+   HEADER / HERO PRINCIPAL
 -------------------------------------------------------- */
 .hero {
     position: relative;
@@ -55,7 +55,6 @@ body {
     z-index: 10;
 }
 
-/* Logo */
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
@@ -70,7 +69,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -141,6 +139,35 @@ body {
 }
 
 /* -------------------------------------------------------
+   HERO PEQUEÑO (para páginas internas)
+-------------------------------------------------------- */
+.small-hero {
+    position: relative;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.small-hero .hero-bg {
+    filter: brightness(0.45);
+}
+
+.small-hero .hero-content {
+    text-align: center;
+    color: white;
+}
+
+.small-hero .hero-content h1 {
+    font-size: 48px;
+}
+
+.small-hero .hero-content p {
+    font-size: 18px;
+}
+
+/* -------------------------------------------------------
    FOOTER
 -------------------------------------------------------- */
 footer {
@@ -152,7 +179,7 @@ footer {
 }
 
 /* -------------------------------------------------------
-   RESPONSIVE
+   RESPONSIVE GENERAL
 -------------------------------------------------------- */
 @media (max-width: 768px) {
     .nav-links {
@@ -169,7 +196,7 @@ footer {
 }
 
 /* =======================================
-   HABITACIONES - RESERVAS
+   HABITACIONES / RESERVAS
 ======================================= */
 
 .rooms-grid {
@@ -197,16 +224,12 @@ footer {
     color: #444;
 }
 
-/* ⭐ NUEVA VERSIÓN — IMÁGENES CON BORDE DORADO */
 .room-card img {
     width: 100%;
     max-height: 500px;
     object-fit: contain;
     border-radius: 14px;
-
-    /* Borde dorado */
     border: 4px solid #d1b97c;
-
     background-color: #f5f5f5;
     padding: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
@@ -234,7 +257,7 @@ footer {
 }
 
 /* =======================================
-   FORMULARIO RESERVA
+   FORMULARIO DE RESERVAS
 ======================================= */
 
 .reservation-form {
@@ -281,27 +304,9 @@ footer {
 }
 
 /* =======================================
-   HERO PEQUEÑO PARA SECCIONES INTERNAS
+   ABOUT – SECCIÓN PRINCIPAL
 ======================================= */
 
-.small-hero {
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.small-hero .hero-content h1 {
-    font-size: 48px;
-}
-
-.small-hero .hero-content p {
-    font-size: 18px;
-}
-
-/* =======================================
-   ABOUT - SECCIÓN PRINCIPAL
-======================================= */
 .about-section {
     padding: 80px 0;
 }
@@ -336,9 +341,17 @@ footer {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
 /* =======================================
-   VISIÓN Y VALORES
+   VALORES / VISIÓN
 ======================================= */
+
 .about-values {
     padding: 80px 0;
     background: #f9f7f3;
@@ -385,20 +398,14 @@ footer {
     line-height: 1.6;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
     .values-grid {
         grid-template-columns: 1fr;
     }
 }
 
 /* =======================================
-   SERVICIOS - OPCIÓN B (Alternado Luxury)
+   SERVICIOS – DISEÑO ALTERNADO
 ======================================= */
 
 .services-section {
@@ -414,7 +421,6 @@ footer {
     margin-bottom: 100px;
 }
 
-/* Reversa (imagen derecha / texto izquierda) */
 .service-row.reverse {
     direction: rtl;
 }
@@ -423,7 +429,6 @@ footer {
     direction: ltr;
 }
 
-/* Imágenes con borde dorado */
 .service-row img {
     width: 100%;
     border-radius: 14px;
@@ -435,7 +440,6 @@ footer {
     max-height: 450px;
 }
 
-/* Textos */
 .service-text h2 {
     font-family: "Playfair Display", serif;
     font-size: 32px;
@@ -449,7 +453,6 @@ footer {
     line-height: 1.7;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .service-row {
         grid-template-columns: 1fr;
@@ -462,7 +465,7 @@ footer {
 }
 
 /* =======================================
-   CONTACTO – DISEÑO PREMIUM (Opción A)
+   CONTACTO – FORMULARIO + INFO
 ======================================= */
 
 .contact-section {
@@ -482,7 +485,7 @@ footer {
     padding: 40px;
     border-radius: 14px;
     border: 3px solid #d1b97c;
-    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
 }
 
 .contact-form-box h2,
@@ -493,7 +496,6 @@ footer {
     color: #1a1a1a;
 }
 
-/* Inputs */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -517,7 +519,6 @@ footer {
     resize: none;
 }
 
-/* Botón */
 .contact-btn {
     padding: 14px;
     width: 100%;
@@ -534,7 +535,6 @@ footer {
     background: #8d6a2f;
 }
 
-/* Tarjetas de info */
 .info-item {
     margin-bottom: 25px;
 }
@@ -550,7 +550,6 @@ footer {
     color: #444;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -558,17 +557,90 @@ footer {
 }
 
 /* =======================================
-   RESEÑAS – CARRUSEL HORIZONTAL LUXURY
+   REDES SOCIALES – CONTACTO
 ======================================= */
 
-.reviews-section {
-    padding: 80px 0;
+.social-section {
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.social-title {
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+    background: #d1b97c;
+    text-decoration: none;
+    transition: .3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.16);
+    background: #b99d63;
+}
+
+.whatsapp { background: #25D366; }
+.whatsapp:hover { background: #1EBE5B; }
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #d73384, #7a4dd6);
+}
+.instagram:hover {
+    filter: brightness(1.15);
+}
+
+.facebook { background: #1877F2; }
+.facebook:hover { background: #0f5fcc; }
+
+.gmail { background: #dd4b39; }
+.gmail:hover { background: #c43d2b; }
+
+@media (max-width: 600px) {
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+}
+
+/* =======================================================
+   ⭐⭐⭐ RESEÑAS PREMIUM – NUEVO (OPCIÓN A)
+======================================================= */
+
+.reviews-section {
+    margin: 100px auto;
+    text-align: center;
+    position: relative;
 }
 
 .reviews-title {
-    font-family: "Playfair Display", serif;
     font-size: 38px;
+    font-family: "Playfair Display", serif;
     margin-bottom: 40px;
     color: #1a1a1a;
 }
@@ -576,49 +648,95 @@ footer {
 /* Carrusel */
 .reviews-carousel {
     display: flex;
-    gap: 25px;
+    gap: 40px;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 20px;
     scroll-behavior: smooth;
+    padding: 20px 10px;
 }
 
 .reviews-carousel::-webkit-scrollbar {
-    height: 8px;
-}
-
-.reviews-carousel::-webkit-scrollbar-thumb {
-    background: #d1b97c;
-    border-radius: 10px;
+    display: none;
 }
 
 /* Tarjetas */
 .review-card {
     min-width: 320px;
-    background: white;
-    border-radius: 14px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
     border: 3px solid #d1b97c;
-    padding: 28px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-    scroll-snap-align: center;
-    transition: .3s ease;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
 }
 
-.review-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 30px rgba(0,0,0,0.18);
+/* Animación */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Texto */
+/* Foto circular */
+.review-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #d1b97c;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
 .review-name {
-    font-family: "Playfair Display", serif;
-    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: #d1b97c;
+    font-size: 20px;
     margin-bottom: 12px;
-    color: #1a1a1a;
 }
 
 .review-text {
-    font-size: 17px;
-    color: #444;
+    font-size: 16px;
+    color: #555;
     line-height: 1.6;
+}
+
+/* Flechas */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 3px solid #d1b97c;
+    color: #d1b97c;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.arrow:hover {
+    background: #d1b97c;
+    color: white;
+}
+
+.arrow.left { left: 5%; }
+.arrow.right { right: 5%; }
+
+@media (max-width: 900px) {
+    .arrow {
+        display: none;
+    }
 }

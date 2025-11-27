@@ -15,7 +15,7 @@
 <body>
 
     <header class="hero">
-        <img class="hero-bg" src="assets/images/recepcion.jpg" alt="Reseñas Aurea">
+        <img class="hero-bg" src="assets/images/servicio2.jpg" alt="Reseñas Aurea">
 
         <nav class="nav container">
             <a class="logo" href="index.html">
@@ -38,47 +38,79 @@
     </header>
 
     <!-- ================================
-         CARRUSEL DE RESEÑAS LUXURY
+         CARRUSEL DE RESEÑAS PREMIUM
     ================================= -->
     <section class="reviews-section">
         <h2 class="reviews-title">Opiniones de Huéspedes</h2>
 
-        <div class="reviews-carousel">
+        <!-- Flechas -->
+        <button class="arrow left" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="arrow right" onclick="moveCarousel(1)">&#10095;</button>
+
+        <div class="reviews-carousel" id="reviewsCarousel">
+
             <!-- Tarjeta 1 -->
             <div class="review-card">
+                <img src="assets/images/user1.jpg" alt="" class="review-photo">
                 <p class="review-name">María P.</p>
+                <div class="stars">★★★★★</div>
                 <p class="review-text">“Una estadía increíble. Servicio excepcional y habitaciones impecables.”</p>
             </div>
 
             <!-- Tarjeta 2 -->
             <div class="review-card">
+                <img src="assets/images/user2.jpg" alt="" class="review-photo">
                 <p class="review-name">Carlos R.</p>
+                <div class="stars">★★★★★</div>
                 <p class="review-text">“El spa es simplemente maravilloso. Volveré sin dudas.”</p>
             </div>
 
             <!-- Tarjeta 3 -->
             <div class="review-card">
+                <img src="assets/images/user3.jpg" alt="" class="review-photo">
                 <p class="review-name">Lucía M.</p>
+                <div class="stars">★★★★☆</div>
                 <p class="review-text">“El personal muy amable y atento. Un lugar perfecto para desconectar.”</p>
             </div>
 
             <!-- Tarjeta 4 -->
             <div class="review-card">
+                <img src="assets/images/user4.jpg" alt="" class="review-photo">
                 <p class="review-name">Federico L.</p>
+                <div class="stars">★★★★★</div>
                 <p class="review-text">“La gastronomía es de otro nivel. Una experiencia completa.”</p>
             </div>
 
             <!-- Tarjeta 5 -->
             <div class="review-card">
+                <img src="assets/images/user5.jpg" alt="" class="review-photo">
                 <p class="review-name">Ana S.</p>
+                <div class="stars">★★★★★</div>
                 <p class="review-text">“Ambiente cálido, elegante y con excelente atención.”</p>
             </div>
+
         </div>
     </section>
 
     <footer>
         <p>© 2024 Aurea Luxury Suites - Todos los derechos reservados</p>
     </footer>
+
+    <!-- Script carrusel -->
+    <script>
+        const carousel = document.getElementById('reviewsCarousel');
+
+        function moveCarousel(direction) {
+            const cardWidth = 360;
+            carousel.scrollBy({
+                left: direction * cardWidth,
+                behavior: 'smooth'
+            });
+        }
+
+        // Auto-slide
+        setInterval(() => moveCarousel(1), 3500);
+    </script>
 
 </body>
 
