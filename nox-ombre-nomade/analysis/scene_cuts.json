@@ -1,0 +1,202 @@
+{
+ "reference": {
+  "resolution": "384x832 (screen recording of an Instagram Reel)",
+  "fps": 60,
+  "duration_s": 43.925
+ },
+ "measured_cuts_s": [
+  0.4,
+  0.917,
+  2.15,
+  4.15,
+  6.15,
+  6.683,
+  9.083,
+  11.083,
+  13.25,
+  16.117,
+  18.883,
+  21.633,
+  24.217,
+  26.95,
+  27.55,
+  28.283,
+  28.717,
+  29.25,
+  29.783,
+  32.783,
+  35.05,
+  35.55,
+  36.583,
+  37.117,
+  38.583,
+  40.65,
+  41.55,
+  42.417,
+  43.017
+ ],
+ "shots": [
+  {
+   "name": "A_humo",
+   "t0": 0.0,
+   "t1": 0.4,
+   "caption": "AHUMADO"
+  },
+  {
+   "name": "B_humo_disipa",
+   "t0": 0.4,
+   "t1": 0.917,
+   "caption": "AHUMADO"
+  },
+  {
+   "name": "C_pipeta",
+   "t0": 0.917,
+   "t1": 2.15,
+   "caption": null
+  },
+  {
+   "name": "D_embudo_ambar",
+   "t0": 2.15,
+   "t1": 4.15,
+   "caption": "ÁMBAR"
+  },
+  {
+   "name": "E_jeringa",
+   "t0": 4.15,
+   "t1": 6.15,
+   "caption": "BALSÁMICO"
+  },
+  {
+   "name": "F_pipeta",
+   "t0": 6.15,
+   "t1": 6.683,
+   "caption": null
+  },
+  {
+   "name": "G_embudo_oud",
+   "t0": 6.683,
+   "t1": 9.083,
+   "caption": "OUD"
+  },
+  {
+   "name": "H_frasco_botanicos",
+   "t0": 9.083,
+   "t1": 11.083,
+   "caption": "LEÑOSO"
+  },
+  {
+   "name": "I_gotero_claro",
+   "t0": 11.083,
+   "t1": 13.25,
+   "caption": null
+  },
+  {
+   "name": "J_gotero_turquesa",
+   "t0": 13.25,
+   "t1": 16.117,
+   "caption": null
+  },
+  {
+   "name": "K_gotero_naranja",
+   "t0": 16.117,
+   "t1": 18.883,
+   "caption": "AFRUTADO"
+  },
+  {
+   "name": "L_gotero_carmesi",
+   "t0": 18.883,
+   "t1": 21.633,
+   "caption": "ROSA"
+  },
+  {
+   "name": "M_gotero_marron",
+   "t0": 21.633,
+   "t1": 24.217,
+   "caption": "CUERO"
+  },
+  {
+   "name": "N_pipeta_amarilla",
+   "t0": 24.217,
+   "t1": 26.95,
+   "caption": "DULCE"
+  },
+  {
+   "name": "O_pinzas_cardamomo",
+   "t0": 26.95,
+   "t1": 29.25,
+   "caption": "PICANTE CÁLIDO"
+  },
+  {
+   "name": "P1_gotero",
+   "t0": 29.25,
+   "t1": 29.783,
+   "caption": null
+  },
+  {
+   "name": "P2_embudo_azafran",
+   "t0": 29.783,
+   "t1": 32.783,
+   "caption": null
+  },
+  {
+   "name": "Q_vaso_alcohol",
+   "t0": 32.783,
+   "t1": 35.05,
+   "caption": null
+  },
+  {
+   "name": "R_pipeta",
+   "t0": 35.05,
+   "t1": 35.55,
+   "caption": null
+  },
+  {
+   "name": "S_atomizador_crimpado",
+   "t0": 35.55,
+   "t1": 36.583,
+   "caption": null
+  },
+  {
+   "name": "T_reposo",
+   "t0": 36.583,
+   "t1": 37.117,
+   "caption": null
+  },
+  {
+   "name": "U_mano_agitado",
+   "t0": 37.117,
+   "t1": 38.583,
+   "caption": null
+  },
+  {
+   "name": "V_luz_moteada",
+   "t0": 38.583,
+   "t1": 40.65,
+   "caption": null
+  },
+  {
+   "name": "W_barrido",
+   "t0": 40.65,
+   "t1": 41.55,
+   "caption": null
+  },
+  {
+   "name": "X_bandeja",
+   "t0": 41.55,
+   "t1": 42.417,
+   "caption": null
+  },
+  {
+   "name": "Y_hero",
+   "t0": 42.417,
+   "t1": 43.017,
+   "caption": null
+  },
+  {
+   "name": "Z_spray_titulo",
+   "t0": 43.017,
+   "t1": 43.933,
+   "caption": null
+  }
+ ]
+}
