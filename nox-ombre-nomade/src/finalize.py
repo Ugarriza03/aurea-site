@@ -30,7 +30,7 @@ def main():
     audio.main(wav)
     out = os.path.join(EXP, 'NOX_OMBRE_NOMADE.mp4')
     run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-i', wav,
-         '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-preset', 'slow', '-crf', '16', '-maxrate', '24M', '-bufsize', '48M',
+         '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-maxrate', '14M', '-bufsize', '28M',
          '-profile:v', 'high', '-level', '4.2', '-pix_fmt', 'yuv420p', '-r', '30', '-g', '30',
          '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709',
          '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '320k', '-ar', '48000',
